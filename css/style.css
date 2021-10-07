@@ -1,0 +1,291 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.signupHead {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #f4f5f8;
+}
+
+h1 {
+  background-color: #293241;
+  color: #f4f5f8;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  color: rgb(38, 50, 63);
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+fieldset {
+  border: none;
+  margin-top: 1em;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+legend {
+  font-family: "Oswald", sans-serif;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.header p {
+  font-size: 0.8em;
+  color: rgb(132, 137, 141);
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+}
+
+.main {
+  margin-top: 0;
+  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 1em;
+  border-top: 5px double rgb(38, 50, 63);
+}
+
+.container {
+  background-color: #98c1d9;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 1em;
+}
+
+.border {
+  margin-top: 1em;
+  border: 1px solid rgb(38, 50, 63);
+}
+.contactInfo {
+  padding-bottom: 2em;
+  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+select {
+  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+}
+
+.contactInfo input:focus,
+select:focus {
+  background-color: white;
+  outline: 1px solid rgb(38, 50, 63);
+}
+
+.contactInfo label {
+  display: block;
+  font-size: 0.8em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  color: rgb(243, 247, 250);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  background-color: rgb(230, 232, 233);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 0.75em;
+  outline: 0;
+}
+
+input::placeholder {
+  font-size: 0.75em;
+  padding-right: 10px;
+  color: rgb(158, 164, 168);
+  text-align: right;
+  font-style: italic;
+}
+
+input[name="zipCode"] {
+  width: 50%;
+}
+
+select {
+  color: rgb(158, 164, 168);
+  font-size: 0.75em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container2 {
+  padding-top: 2em;
+}
+
+.newsletter {
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+.newsletter label {
+  margin-top: 2em;
+  padding-top: 2em;
+  font-size: 0.8em;
+  color: rgb(132, 137, 141);
+}
+
+.newsletter input {
+  outline: none;
+}
+
+.newsletter p {
+  font-size: 0.8rem;
+  color: rgb(132, 137, 141);
+  text-align: left;
+  margin-bottom: 0.8em;
+  margin-top: 0;
+}
+
+input[value="javascriptNews"] {
+  margin-bottom: 1.5em;
+}
+
+textarea {
+  padding-top: 1em;
+  margin-top: 1em;
+  background-color: rgb(230, 232, 233);
+  border: none;
+  border-radius: 5px;
+  height: calc(100vw / 3);
+  max-height: 80px;
+}
+
+.signup {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.75em;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  opacity: 50%;
+}
+
+.newsOptions {
+  margin-bottom: 0.5em;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+}
+
+.other label {
+  margin-top: 0;
+}
+.buttonCont {
+  display: flex;
+}
+
+.buttonCont {
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.button {
+  transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.button:hover {
+  background-color: rgb(38, 50, 63);
+}
+
+.button {
+  margin-top: 0.75em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: calc(100vw / 6);
+  margin-bottom: 0.5em;
+  max-height: 65px;
+  font-family: "Lora", serif;
+  font-size: 1.05rem;
+  color: #f4f5f8;
+  background: linear-gradient(#ee6c4d, #f33b0d);
+  transition: font-size 0.3s ease, background 0.3s ease;
+}
+
+.button:hover {
+  font-size: 1.15rem;
+  background: linear-gradient(rgb(130, 176, 224), rgb(38, 50, 63));
+}
+
+@media (min-width: 768px) {
+  .main,
+  .labelInputPairs,
+  .labelInputPairs2 {
+    display: flex;
+  }
+
+  .main {
+    flex-direction: column;
+    max-width: 60%;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .labelInputPairs {
+    flex-grow: 1;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    justify-content: space-between;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    max-width: 75%;
+  }
+
+  .labelInputPairs2 {
+    justify-content: left;
+  }
+
+  .labelInputPairs2 input {
+    margin-left: 4em;
+    width: 30%;
+  }
+
+  .signupHead {
+    padding-bottom: 1.5em;
+  }
+}
