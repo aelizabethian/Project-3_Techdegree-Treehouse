@@ -68,6 +68,16 @@ legend {
   margin-right: 1em;
   padding-top: 1em;
   border-top: 5px double rgb(38, 50, 63);
+  position: relative;
+}
+
+.main:before {
+  content: "";
+  border: 2px solid rgb(38, 50, 63);
+  position: absolute;
+  width: 100%;
+  top: -8px;
+  left: 0px;
 }
 
 .container {
@@ -83,19 +93,28 @@ legend {
   margin-top: 1em;
   border: 1px solid rgb(38, 50, 63);
 }
-.contactInfo {
+.contactInfo input {
   padding-bottom: 2em;
-  transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  transition: background-color 0.3s ease, outline 0.3s ease;
 }
 
 select {
-  transition: background-color 0.5s ease-in-out, outline 0.5s ease-in-out;
+  transition: background-color 0.5s ease, outline 0.5s ease;
+}
+
+textarea {
+  transition: background-color 0.5s ease, outline 0.5s ease;
 }
 
 .contactInfo input:focus,
 select:focus {
   background-color: white;
   outline: 1px solid rgb(38, 50, 63);
+}
+
+textarea:focus {
+  outline: 2px solid rgb(130, 176, 224);
+  background-color: rgb(243, 247, 250);
 }
 
 .contactInfo label {
@@ -128,7 +147,8 @@ input::placeholder {
 }
 
 input[name="zipCode"] {
-  width: 50%;
+  width: 30%;
+  margin-right: 45%;
 }
 
 select {
@@ -274,15 +294,7 @@ footer p {
   input[type="tel"],
   select {
     max-width: 75%;
-  }
-
-  .labelInputPairs2 {
-    justify-content: left;
-  }
-
-  .labelInputPairs2 input {
-    margin-left: 4em;
-    width: 30%;
+    margin-left: 1em;
   }
 
   .signupHead {
