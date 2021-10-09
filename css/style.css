@@ -54,7 +54,7 @@ legend {
 }
 
 .header p {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: rgb(132, 137, 141);
   padding-left: 1em;
   padding-right: 1em;
@@ -93,6 +93,7 @@ legend {
   margin-top: 1em;
   border: 1px solid rgb(38, 50, 63);
 }
+
 .contactInfo input {
   padding-bottom: 2em;
   transition: background-color 0.3s ease, outline 0.3s ease;
@@ -139,7 +140,7 @@ select {
 }
 
 input::placeholder {
-  font-size: 0.75em;
+  font-size: 0.85em;
   padding-right: 10px;
   color: rgb(158, 164, 168);
   text-align: right;
@@ -148,7 +149,7 @@ input::placeholder {
 
 input[name="zipCode"] {
   width: 30%;
-  margin-right: 45%;
+  margin-right: 40%;
 }
 
 select {
@@ -157,10 +158,10 @@ select {
   padding-left: 10px;
   padding-right: 10px;
 }
-
+/* 
 .container2 {
   padding-top: 2em;
-}
+} */
 
 .newsletter {
   margin-top: 0;
@@ -269,10 +270,26 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .header p,
+  label {
+    font-size: 1em;
+  }
+
   .main,
   .labelInputPairs,
   .labelInputPairs2 {
     display: flex;
+    font-size: 1.1em;
+  }
+
+  .labelInputPairs input {
+    font-size: 0.9rem;
   }
 
   .main {
@@ -280,6 +297,7 @@ footer p {
     max-width: 60%;
     justify-content: center;
     margin: auto;
+    font-size: 1.1em;
   }
 
   .labelInputPairs {
@@ -293,7 +311,7 @@ footer p {
   input[type="email"],
   input[type="tel"],
   select {
-    max-width: 75%;
+    max-width: 70%;
     margin-left: 1em;
   }
 

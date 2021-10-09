@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylsheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>The Code Review</title>
 </head>
@@ -17,42 +17,39 @@
         <div class="signupHead">
         <h2 class="signup">Signup for our newsletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>  
-    </div> 
-<div class="line"></div>
+        </div> 
+
+        <div class="line"></div>
     </header>
-
-
 
 <main class="main">
 
-<div class="container">
-
-
-<form action="" method="post">
+<form action="#" method= "post">
+    <div class="container">
     <fieldset class="contactInfo">
     <legend>Contact Information</legend>
-    <div class = "labelInputPairs">
-    <label for="fullName">Full Name</label>
-    <input type="text" id="fullName" name="fullName" placeholder="Required" required > 
-    </div>
 
     <div class = "labelInputPairs">
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" placeholder="Required" required> </div>
-
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Required" required></div> 
+   
     <div class = "labelInputPairs">
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" placeholder="Use format (444) 444-4444"> </div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Required" required></div>
     
     <div class = "labelInputPairs">
-    <label for="address">Street Address</label>
-    <input type="text" id="address" name="address" placeholder="P.O. Box also accepted"> </div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Use format (444) 444-4444"></div>
+
+    <div class = "labelInputPairs">
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="address" placeholder="P.O. Box also accepted"></div>
     
     <div class = "labelInputPairs">
-    <label for="city">City</label>
-    <input type="text" id="city" name="city"> </div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city"></div>
 
-<div class = "labelInputPairs"> 
+<div class="labelInputPairs"> 
     <label for="state">State</label>
     <select id="state" name="state">
         <option value="">Choose State</option>
@@ -105,70 +102,64 @@
         <option value="Washington">Washington</option>
         <option value="West Virginia">West Virginia</option>
         <option value="Wisconsin">Wisconsin</option>
-        <option value="Wyoming">Wyoming</option>
-</select>
+        <option value="Wyoming">Wyoming</option></select>
 </div>
 
-    
-   <div class = "labelInputPairs .zipArea">
-    <label for="zipCode">Zip Code</label>
-    <input type="text" id="zipCode" name="zipCode" minlength=5 maxlength=5>
-     </div>
+   <div class = "labelInputPairs">
+        <label for="zipCode">Zip Code</label>
+        <input type="text" id="zipCode" name="zipCode" minlength=5 maxlength=5></div>
 
+    </fieldset>
 </div>
-</fieldset>
-
 
 
 <div class="border"></div>
 
-<div class="container2">
-<fieldset class = "newsletter">
+    <fieldset class = "newsletter">
+        <legend>Newsletter</legend>
+        <p>Select the newsletters you would like to receive</p>
+
+        <div class="newsOptions">
+            <input type="checkbox" id="htmlNews" value="htmlNews" name="newsletter">
+            <label for="htmlNews">HTML News</label></div>
+        <div class="newsOptions">
+            <input type="checkbox" id="cssNews" value="cssNews" name="newsletter">
+            <label for="cssNews">CSS News</label></div>
+
+        <div class="newsOptions">
+            <input type="checkbox" id="javascriptNews" value="javascriptNews" name="newsletter">
+            <label for="javascriptNews">Javascript News</label></div>
+     
+        <p>Newsletter format</p>
+        
+        <div class="newsOptions">
+            <input type="radio" id="htmlFormat" value="htmlFormat" name="newsformat">
+            <label for="htmlFormat">HTML</label></div>
+
+        <div class="newsOptions">
+            <input type="radio" id="textFormat" value="textFormat" name="newsformat">
+            <label for="textFormat">Plain Text</label></div>
+
+        <div class="other">
+            <label for="otherTopics">Other topics you'd like to hear about</label></div>
+
+        <textarea id="otherTopics" name="usersTopics"></textarea>
     
-    <legend>Newsletter</legend>
-    <p>Select the newsletters you would like to receive</p>
+    </fieldset>
 
-  
-    <div class="newsOptions">
-    <input type="checkbox" id="htmlNews" value="htmlNews" name="newsletter">
-    <label for="htmlNews">HTML News</label></div>
-   
-    <div class="newsOptions">
-    <input type="checkbox" id="cssNews" value="cssNews" name="newsletter">
-    <label for="cssNews">CSS News</label></div>
     
-    <div class="newsOptions">
-    <input type="checkbox" id="javascriptNews" value="javascriptNews" name="newsletter">
-    <label for="javascriptNews">Javascript News</label></div>
-   
 
-
-    <p>Newsletter format</p>
-    <div class="newsOptions">
-    <input type="radio" id="htmlFormat" value="htmlFormat" name="newsformat">
-    <label for="htmlFormat">HTML</label></div>
-    
-    <div class="newsOptions">
-    <input type="radio" id="textFormat" value="textFormat" name="newsformat">
-    <label for="textFormat">Plain Text</label></div>
-
-
-
-<div class="other">
-    <label for="otherTopics">Other topics you'd like to hear about</label>
-    <textarea id="otherTopics" name="usersTopics"></textarea>
-</div>
-</fieldset>
-
-<div class="buttonCont">
+    <div class="buttonCont">
     <button class="button" type="submit"><strong>Sign Up</strong></button>
-    </form></div>
+        </div>
+
 </form>
 </main>
 
 <footer class="footer">
     <p><em>Copyright &copy; The Code Review</em></p>
 </footer>
-</div>
+
+
 </body>
 </html>
