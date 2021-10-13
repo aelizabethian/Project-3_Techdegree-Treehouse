@@ -148,8 +148,8 @@ input::placeholder {
 }
 
 input[name="zipCode"] {
-  width: 30%;
-  margin-right: 40%;
+  width: 50%;
+  margin-right: 30%;
 }
 
 select {
@@ -158,10 +158,6 @@ select {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* 
-.container2 {
-  padding-top: 2em;
-} */
 
 .newsletter {
   margin-top: 0;
@@ -199,6 +195,7 @@ textarea {
   border-radius: 5px;
   height: calc(100vw / 3);
   max-height: 80px;
+  width: 100%;
 }
 
 .signup {
@@ -313,6 +310,11 @@ footer p {
   select {
     max-width: 70%;
     margin-left: 1em;
+  }
+
+  input[name="zipCode"] {
+    width: 25%;
+    margin-right: 45%;
   }
 
   .signupHead {
