@@ -219,6 +219,10 @@ footer p {
   margin-bottom: 0.5em;
 }
 
+.newsletterLeg {
+  padding-top: 1em;
+}
+
 .other {
   display: flex;
   flex-direction: column;
