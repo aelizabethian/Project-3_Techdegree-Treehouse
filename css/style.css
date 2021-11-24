@@ -139,7 +139,7 @@ select {
   outline: 0;
 }
 
-input::placeholder {
+input input::placeholder {
   font-size: 0.85em;
   padding-right: 10px;
   color: rgb(158, 164, 168);
@@ -185,6 +185,10 @@ select {
 
 input[value="javascriptNews"] {
   margin-bottom: 1.5em;
+}
+
+input {
+  text-indent: 15px;
 }
 
 textarea {
@@ -270,6 +274,14 @@ footer p {
   background: linear-gradient(rgb(130, 176, 224), rgb(38, 50, 63));
 }
 
+@media (min-width: 550px) {
+  .main {
+    max-width: 500px;
+    margin: 0 auto;
+    transition: 0.4s ease-out;
+  }
+}
+
 @media (min-width: 768px) {
   h1,
   h2,
@@ -299,6 +311,7 @@ footer p {
     justify-content: center;
     margin: auto;
     font-size: 1.1em;
+    transition: 0.4s ease-out;
   }
 
   .labelInputPairs {
